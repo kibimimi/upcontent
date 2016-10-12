@@ -1,0 +1,126 @@
+  *{
+    box-sizing!!: border-box;
+  }
+.navbar-header h1{margin: 0}/* Pour maintenir le pseudo logo sur la même ligne que les menus*/
+a.navbar-brand{
+  color: #00A4EF !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+#items_wrapper{
+  /*border:1px solid #F8CE5F;*/
+  background-color: black;
+}
+#item_wrapper{
+  border-top:1px dotted #F8CE5F;
+  margin-bottom:5px;
+  color: #858585;
+}
+#right-block-sider{
+ border:1px solid #F8CE5F;
+ margin-left: 1%;
+ padding: 10px;
+}
+
+#item_wrapper h2,#grand-titre h2 {
+  color: #f8ce5f;
+  font-size: 18px;
+  margin-left: 5px
+}
+#grand-titre h2 {
+  margin-bottom: 0;
+}
+#grand-titre{
+    margin:auto;
+    text-align:center;
+    border:1px solid #F8CE5F;
+    
+}
+#grand-titre h1{
+    font-size:20px;
+    color:#F8CE5F;
+    font-weight:bold;
+}
+.row #grand-titre p{ padding: 10px}
+.contenu_principal ,.row #grand-titre p{
+    padding:15px;
+    font-family :Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    color:#858585;
+    text-align:justify;
+}
+.lazyload{
+  width: 200px;height: 10px;
+}
+.chargement{
+position : fixed;
+z-index: 9999;
+/*background : url('chargement.gif') 50% 50% no-repeat;*/
+top : 0px;
+left : 0px;
+height : 100%;
+width : 100%;
+cursor : wait;
+}
+
+/******************************** MEDIA QUERY ***********************************************/
+@media screen and (max-width: 480px) {/*Mobile portrait (320x480)*/
+  #right-block-sider{
+    clear: both;
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 600px) {/*Mobile paysage (480x320)*/
+  /*#right-block-sider{
+    width: 0;
+    float: none;
+  }*/
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 768px) {/*Petite tablette portrait (600x800)*/
+  body{
+      /*background-color: olive;*/
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {/*Petite tablette paysage (800x600)*/
+  body{
+      background-color: #eee;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 800px) {/*Tablette portrait (768x1024)*/
+ 
+  #right-block-sider{
+   margin-left: 0;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {/*Tablette paysage (1024x768)*/
+  #items_wrapper{
+  width: 74%;
+  /*background-color: olive;*/
+  }
+  #right-block-sider{
+   width: 25%;
+  }
+/*.navbar-brand {
+    float: left;
+    font-size: 18px;
+    height: 10px;
+    line-height: 10px;
+    padding: 15px;
+}
+.navbar-nav > li > a {
+  padding-bottom: 7px;
+  padding-top: 7px;
+  line-height: 12px;
+}*/
+
+}
+/******************************** ! MEDIA QUERY ***********************************************/

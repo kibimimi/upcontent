@@ -1,0 +1,4 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^kib-shop.com/$
+RewriteRule ^(.*) http://www.kib-shop.com/$1 [QSA,L,R=301]
